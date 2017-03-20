@@ -10,3 +10,4 @@ Règles d'utilisation :
 
   - Si vous voulez poster du code, suivez ce tutoriel pour créer une nouvelle branche (à partir de "Step 2") : https://guides.github.com/activities/hello-world/
 
+  - Ne pas poster de PDF ou autre document donné pour le labo. Postez seulement du code.
