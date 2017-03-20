@@ -1,5 +1,7 @@
 # ML_Labo3
 
-Collaboration around Labo3
+Collaboration pour le labo 3
 
-EDIT: Test
+Règles d'utilisation :
+..* Ne pas copier-coller. Toujours se servir du code comme inspiration.
+..* Donner vos propres nom aux variables
