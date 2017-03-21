@@ -16,7 +16,7 @@ Règles d'upload :
   
   - L'idée est de poster votre méthode de résolution de l'exercice (synthétisée) afin que d'autres comprennent la méthodologie et le raisonnement afin de s'en inspirer.
   
-  - Créez votre propre branche et créez-y vos propres fichiers. Nommez votre branche selon votre pseudo et vos fichiers selon l'exercice et évitez d'écrire votre nom ou prénom dans le code.
+  - Créez votre propre branche et créez-y vos propres fichiers. Nommez votre branche selon votre pseudo et vos fichiers selon l'exercice et évitez d'utiliser votre nom ou prénom.
   
   - N'uploadez pas vos fichiers scripts *.m directement. Créez plutôt de noouveaux fichiers dans votre branche.
 
