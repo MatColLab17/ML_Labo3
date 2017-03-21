@@ -6,15 +6,15 @@ Règles d'utilisation :
 
   - Ne pas copier-coller. Toujours se servir du code comme inspiration.
 
-  - Donner vos propres nom aux variables.
-
   - Si vous voulez poster du code, suivez ce tutoriel pour créer une nouvelle branche (à partir de "Step 2") : https://guides.github.com/activities/hello-world/
 
   - Ne pas poster de PDF ou autre document donné pour le labo. Postez seulement du code.
   
 Règles d'upload :
 
-  - Vous devez être collaborateur pour poster vos versions.
+  - Vous devez être collaborateur pour poster vos versions. Si possible, utilisez un nom d'utilisateur qui ne contient pas votre nom/prénom.
+  
+  - L'idée est de poster votre méthode de résolution de l'exercice (synthétisée) afin que d'autres comprennent la méthodologie et le raisonnement afin de s'en inspirer.
   
   - Créez votre propre branche et créez-y vos propres fichiers. Nommez-les selon le labo et l'exercice et n'indiquez pas votre nom ou prénom.
 
