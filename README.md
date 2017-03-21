@@ -18,7 +18,7 @@ Règles d'upload :
   
   - Créez votre propre branche et créez-y vos propres fichiers. Nommez-les selon le labo et l'exercice et n'indiquez pas votre nom ou prénom.
   
-  - N'uploadez pas vos fichiers scripts *.m directement.
+  - N'uploadez pas vos fichiers scripts *.m directement. Créez plutôt de noouveaux fichiers dans votre branche.
 
   - La dépersonnalisation du code est cruciale. Choisissez des noms de variables claires mais banales/génériques (ex: var1, Matrix02,etc..)
   
