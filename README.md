@@ -17,6 +17,8 @@ Règles d'upload :
   - L'idée est de poster votre méthode de résolution de l'exercice (synthétisée) afin que d'autres comprennent la méthodologie et le raisonnement afin de s'en inspirer.
   
   - Créez votre propre branche et créez-y vos propres fichiers. Nommez-les selon le labo et l'exercice et n'indiquez pas votre nom ou prénom.
+  
+  - N'uploadez pas vos fichiers scripts *.m directement.
 
   - La dépersonnalisation du code est cruciale. Choisissez des noms de variables claires mais banales/génériques (ex: var1, Matrix02,etc..)
   
