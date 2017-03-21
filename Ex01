@@ -24,7 +24,7 @@ function [a b]=RegressionAffine(MatrixIn)
     Matrix_ab = Matrix01\Matrix02;
 
 	
-	a=Matrix_ab(1);
+    a=Matrix_ab(1);
     b=Matrix_ab(2);
     
     %% Partie 2 NE COPIEZ PAS CE COMMENTAIRE
