@@ -1,1 +1,36 @@
+function [a b]=RegressionAffine(MatrixIn)
 
+    x_positions=MatrixIn(:,1);
+    y_positions=MatrixIn(:,2);
+
+    number_positions=size(x_positions);
+    number_positions=number_positions(1);
+
+    Sum_x_positions = 0;
+    Sum_x_positions_sqr = 0;
+    Sum_y_positions = 0;
+    Sum_x_positions_y_positions = 0;
+
+    for t = 1:number_positions
+        Sum_x_positions = Sum_x_positions + x_positions(t);
+        Sum_x_positions_sqr = Sum_x_positions_sqr + x_positions(t).^2;
+        Sum_y_positions = Sum_y_positions + y_positions(t);
+        Sum_x_positions_y_positions = Sum_x_positions_y_positions + (x_positions(t) * y_positions(t));
+    end
+
+
+    Matrix01 = [Sum_x_positions_sqr, Sum_x_positions;Sum_x_positions, number_positions];
+    Matrix02 = [Sum_x_positions_y_positions;Sum_y_positions];
+    Matrix_ab = Matrix01\Matrix02;
+
+	
+	a=Matrix_ab(1);
+    b=Matrix_ab(2);
+    
+    %% Partie 2 NE COPIEZ PAS CE COMMENTAIRE
+    hold on;
+    plot(x_positions,y_positions, 'ob');
+    plot(x_positions, a.*x_positions +b,'-r');
+    hold off;
+
+end
