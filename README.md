@@ -7,8 +7,6 @@ Règles d'utilisation :
   - Ne pas copier-coller. Toujours se servir du code comme inspiration.
 
   - Si vous voulez poster du code, suivez ce tutoriel pour créer une nouvelle branche (à partir de "Step 2") : https://guides.github.com/activities/hello-world/
-
-  - Ne pas poster de PDF ou autre document donné pour le labo. Postez seulement du code.
   
 Règles d'upload :
 
@@ -23,4 +21,6 @@ Règles d'upload :
   - La dépersonnalisation du code est cruciale. Choisissez des noms de variables claires mais banales/génériques (ex: var1, Matrix02,etc..)
   
   - Mettre seulement le minimum de commentaire, le plus synthétique possible.
+
+  - Ne pas poster de PDF ou autre document donné pour le labo. Postez seulement du code.
 
