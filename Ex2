@@ -1,0 +1,40 @@
+function [a, b, r] = RegressionCirculaire(M)
+    xVector=M(:,1);
+    yVector=M(:,2);
+	
+    VectorSize=size(xVector);
+    coord_nber=VectorSize(1);
+	
+    SumOf_x=sum(xVector);
+    SumOf_y=sum(yVector);
+    SumOf_x2=sum(xVector.^2);
+    SumOf_y2=sum(yVector.^2);
+    SumOf_x3=sum(xVector.^3);
+    SumOf_y3=sum(yVector.^3);
+    SumOf_2xy=sum(2*(xVector.*yVector));
+    SumOf_x2y=sum((xVector.^2).*yVector);
+    SumOf_xy2=sum(xVector.*(yVector.^2));
+	
+    M1 = [2*SumOf_x2, SumOf_2xy, -SumOf_x ; SumOf_2xy, 2*SumOf_y2, -SumOf_y ; 2*SumOf_x, 2*SumOf_y, -1*coord_nber];
+    M2 = [SumOf_xy2+SumOf_x3 ; SumOf_y3+SumOf_x2y ; SumOf_y2+SumOf_x2];
+    abuVector = M1\M2;
+    
+    a=abuVector(1);
+    b=abuVector(2);
+    u=abuVector(3);
+    r=sqrt(abs(-u+a^2+b^2));
+	
+    figure
+    hold on
+    alpha=linspace(0,2*pi,1000);
+    coord_x=r*cos(alpha);
+    coord_y=r*sin(alpha);
+    plot(xVector, yVector, 'ob'); 
+    plot(coord_x+a, coord_y+b, '-r');
+    axis equal 
+    hold off
+end
+
+Lisez et respectez les conditions d'utilisation (voir README).
+Modifiez le nom des variables et si vous voulez l'ordre des opérations (lorsque ça n'affecte pas les calculs bien sûr).
+N'oubliez pas de commenter votre code!
