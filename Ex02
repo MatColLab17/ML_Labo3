@@ -15,9 +15,9 @@ function [a, b, r] = RegressionCirculaire(M)
     SumOf_x2y=sum((xVector.^2).*yVector);
     SumOf_xy2=sum(xVector.*(yVector.^2));
 	
-    M1 = [2*SumOf_x2, SumOf_2xy, -SumOf_x ; SumOf_2xy, 2*SumOf_y2, -SumOf_y ; 2*SumOf_x, 2*SumOf_y, -1*coord_nber];
-    M2 = [SumOf_xy2+SumOf_x3 ; SumOf_y3+SumOf_x2y ; SumOf_y2+SumOf_x2];
-    abuVector = M1\M2;
+    M_01 = [2*SumOf_x2, SumOf_2xy, -SumOf_x ; SumOf_2xy, 2*SumOf_y2, -SumOf_y ; 2*SumOf_x, 2*SumOf_y, -1*coord_nber];
+    M_02 = [SumOf_xy2+SumOf_x3 ; SumOf_y3+SumOf_x2y ; SumOf_y2+SumOf_x2];
+    abuVector = M_01\M_02;
     
     a=abuVector(1);
     b=abuVector(2);
